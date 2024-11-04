@@ -1,0 +1,58 @@
+[{
+    "name": "bright",
+    "layer": "top",
+    "position": "right",
+    "output": "DP-3",
+
+    "group/top": {
+        "orientation": "vertical",
+        "modules": [ "hyprland/workspaces" ]
+    },
+
+    "group/middle": {
+        "orientation": "vertical",
+        "modules": [ "clock" ]
+    },
+
+    "group/bottom": {
+        "orientation": "vertical",
+        "modules": [ "tray", "network", "custom/logout" ]
+    },
+
+    "modules-left": [ "group/top" ],
+    "modules-right": [ "group/bottom" ],
+    "modules-center": [ "group/middle" ],
+
+    "include": [
+        "~/.config/waybar/modules.json"
+    ]
+}, 
+{
+    "name": "bleft",
+    "layer": "top",
+    "position": "left",
+    "output": "DP-2",
+
+    "group/top": {
+        "orientation": "vertical",
+        "modules": [ "hyprland/workspaces" ]
+    },
+
+    "group/middle": {
+        "orientation": "vertical",
+        "modules": [ "clock" ]
+    },
+
+    "group/bottom": {
+        "orientation": "vertical",
+        "modules": [ "tray", "network", "custom/logout" ]
+    },
+
+    "modules-left": [ "group/top" ],
+    "modules-right": [ "group/bottom" ],
+    "modules-center": [ "group/middle" ],
+
+    "include": [
+        "~/.config/waybar/modules.json"
+    ]
+}]

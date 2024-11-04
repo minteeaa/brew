@@ -1,0 +1,53 @@
+{
+    "clock": {
+        "format": "{:%H\n%M}",
+        "tooltip-format": "{:%a %b %d}",
+        "tooltip": true
+    },
+
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+        },
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
+
+    "hyprland/window": {
+        "separate-outputs": true
+    },
+
+    "custom/appmenu": {
+        "format": "Apps",
+        "on-click": "rofi -show drun -replace",
+        "tooltip": false
+    },
+
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "   {signalStrength}%",
+        "format-ethernet": "",
+        "format-disconnected": "Not connected",
+        "tooltip-format": " {ifname} via {gwaddri}",
+        "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+
+    "custom/logout": {
+        "format": "",
+        "on-click": "wlogout -b 6 -T 400% -B 400% -c 0 -r 0",
+        "tooltip": false
+    }, 
+
+    "tray": {
+        "spacing": 5
+    }
+}

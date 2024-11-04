@@ -1,0 +1,78 @@
+@import "colors.css";
+
+/* 
+* rounded corner <-> sharp corner config adjustment
+*   change any `border-radius` tags from `Xrem` to `0rem`
+*   to reverse, change the same tags from `0rem` to `Xrem`
+*   by default `Xrem` is `2rem`
+*/
+
+* {
+    font-size: 1rem;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+}
+
+window.DP-3#waybar #top, 
+window.DP-3#waybar #middle,
+window.DP-3#waybar #bottom {
+    margin-right: 1rem;
+}
+
+window.DP-2#waybar #top, 
+window.DP-2#waybar #middle,
+window.DP-2#waybar #bottom {
+    margin-left: 1rem;
+}
+
+
+#top {
+    margin-top: 1.05rem;
+}
+
+#bottom {
+    margin-bottom: 1.05rem;
+}
+
+#top,
+#middle,
+#bottom {
+    background: alpha(@background, 0.8);
+    border-radius: 0rem;
+    transition: border 0.2s ease-in-out;
+    border: 0.15rem solid shade(alpha(@primary, 0.7), 0.5);
+}
+
+#top:hover,
+#middle:hover,
+#bottom:hover {
+    transition: border 0.2s ease-in-out;
+    border: 0.15rem solid @primary;
+}
+
+#workspaces button {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0rem;
+}
+
+#workspaces button.active {
+    background: @surface_container;
+    border-radius: 0rem;
+}
+
+#workspaces button:hover, #custom-logout:hover {
+    background: @surface_container_high;
+    border-radius: 0rem;
+}
+
+#clock {
+    padding: 0.5rem 0;
+}
+
+#custom-logout,
+#tray,
+#network {
+    padding: 0.8rem 0;
+}
