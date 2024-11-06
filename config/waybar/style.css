@@ -38,18 +38,21 @@ window.DP-2#waybar #bottom {
 
 #top,
 #middle,
-#bottom {
+#excl-logout,
+#custom-logout {
     background: alpha(@background, 0.8);
     border-radius: 0rem;
     transition: border 0.2s ease-in-out;
-    border: 0.15rem solid shade(alpha(@primary, 0.7), 0.5);
+    border: 0.2rem solid shade(alpha(@primary, 0.7), 0.5);
+    padding: 0.1rem;
 }
 
 #top:hover,
 #middle:hover,
-#bottom:hover {
+#excl-logout:hover,
+#custom-logout:hover {
     transition: border 0.2s ease-in-out;
-    border: 0.15rem solid @primary;
+    border: 0.2rem solid @primary;
 }
 
 #workspaces button {
@@ -71,8 +74,16 @@ window.DP-2#waybar #bottom {
     padding: 0.5rem 0;
 }
 
-#custom-logout,
+#excl-logout {
+    margin-bottom: 1rem;
+    padding: 0.8rem 0;
+}
+
 #tray,
 #network {
+    padding: 0.4rem 0;
+}
+
+#custom-logout {
     padding: 0.8rem 0;
 }

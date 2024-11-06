@@ -14,9 +14,14 @@
         "modules": [ "clock" ]
     },
 
+    "group/excl-logout": {
+        "orientation": "vertical",
+        "modules": [ "tray", "network" ]
+    },
+
     "group/bottom": {
         "orientation": "vertical",
-        "modules": [ "tray", "network", "custom/logout" ]
+        "modules": [ "group/excl-logout", "custom/logout" ]  
     },
 
     "modules-left": [ "group/top" ],
@@ -43,9 +48,14 @@
         "modules": [ "clock" ]
     },
 
+    "group/excl-logout": {
+        "orientation": "vertical",
+        "modules": [ "tray", "network" ]
+    },
+
     "group/bottom": {
         "orientation": "vertical",
-        "modules": [ "tray", "network", "custom/logout" ]
+        "modules": [ "group/excl-logout", "custom/logout" ]
     },
 
     "modules-left": [ "group/top" ],
