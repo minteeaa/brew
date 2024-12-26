@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "../matugen/generated/waybar.css";
 
 /* 
 * rounded corner <-> sharp corner config adjustment
